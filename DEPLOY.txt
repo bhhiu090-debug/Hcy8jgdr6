@@ -1,0 +1,11 @@
+Cube AI 24/7 — запуск за 5 минут:
+
+ВАРИАНТ 1 (Render, бесплатно):
+1. Залей файлы из этой папки в новый GitHub репозиторий (или нажми New > Web Service > Upload).
+2. Render > New > Web Service > выбери репо. Start: node bot-server.mjs.
+3. Токен уже вшит, ничего вводить не надо. Нажми Deploy.
+4. В логах будет online as @Cube_a_bot — готово, сайт можно закрывать.
+5. UptimeRobot: создай HTTP-монитор на URL сервиса каждые 5 мин (чтобы free не засыпал).
+
+ВАЖНО: когда сервер запущен — сними на сайте галочку авто-опрос, иначе апдейты делятся между сайтом и сервером.
+Токен вшит openly — anyone with files can control bot. To change: @BotFather /revoke, replace token in bot-server.mjs and render.yaml.

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: cube-ai-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bot-server.mjs
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        value: '8833738017:AAEsJHCCbqUPDiVhQn2ESc5xaK4F42d7xTk'
